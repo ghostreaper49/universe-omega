@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open Universe Omega</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Open Universe Omega</h1>
+      <p>Total freedom. Infinite worlds. One identity.</p>
+      <button id="open-signup" class="btn primary">Sign Up</button>
+      <button id="scroll-play" class="btn secondary">Play Now (Coming Soon)</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Features -->
+    <section id="features" class="section">
+      <h2>Features</h2>
+      <ul class="feature-list">
+        <li><strong>Multiverse Exploration:</strong> Travel across infinite universes with unique rules and physics.</li>
+        <li><strong>AI Companions:</strong> Every player gets a personal AI with evolving personality.</li>
+        <li><strong>NPC Intelligence:</strong> Custom AI‑driven NPCs that remember your choices.</li>
+        <li><strong>Free‑to‑Play:</strong> No microtransactions. Black Coins are earned through gameplay only.</li>
+      </ul>
+    </section>
+
+    <!-- Character Creation -->
+    <section id="character" class="section">
+      <h2>Character Creation</h2>
+      <p>Create your identity across the OmegaVerse.</p>
+      <form id="character-form" class="card">
+        <label>
+          Display Name
+          <input type="text" id="char-name" placeholder="Your legend name" />
+        </label>
+        <label>
+          Species
+          <select id="char-species">
+            <option value="human">Human</option>
+            <option value="cybernetic">Cybernetic</option>
+            <option value="voidborn">Voidborn</option>
+            <option value="shifter">Shifter</option>
+          </select>
+        </label>
+        <label>
+          Path
+          <select id="char-path">
+            <option value="sentinel">Sentinel</option>
+            <option value="rogue">Rogue</option>
+            <option value="oracle">Oracle</option>
+            <option value="engineer">Engineer</option>
+          </select>
+        </label>
+        <button type="button" id="save-character" class="btn primary">Save Character</button>
+      </form>
+      <div id="character-preview" class="card hidden"></div>
+    </section>
+
+    <!-- Creator Login -->
+    <section id="creator-login-section" class="section">
+      <h2>Creator Access</h2>
+      <p>
+        This panel is reserved for the official creator account of Open Universe Omega.
+        The creator account exists in the game; it just hasn’t been used yet.
+      </p>
+      <form id="creator-login-form" class="card">
+        <label>
+          Username
+          <input type="text" id="creator-username" placeholder="Creator username" />
+        </label>
+        <label>
+          Creator Key
+          <input type="password" id="creator-key" placeholder="Creator key" />
+        </label>
+        <button type="button" id="creator-login-btn" class="btn primary">Enter Creator Mode</button>
+        <p id="creator-login-message" class="message"></p>
+      </form>
+    </section>
+
+    <!-- Creator Panel -->
+    <section id="creator-panel" class="section hidden">
+      <h2>Creator Control Panel</h2>
+      <div class="card">
+        <p><strong>Status:</strong> Creator account authenticated.</p>
+        <p><strong>Account:</strong> Username <code>ghost1746</code> (official creator account).</p>
+        <p>
+          <strong>Note:</strong> This is an actual account in the game; it just hasn’t been used yet.
+        </p>
+        <hr />
+        <p><strong>Black Coins:</strong> ∞ (infinite)</p>
+        <p><strong>Level:</strong> 999999999999999999 (creator‑only max level)</p>
+        <p><strong>Access:</strong> All items, all worlds, all NPCs, all AI companions, all admin tools unlocked.</p>
+        <p>
+          In the live game, this account will automatically start with full access to every system in the OmegaVerse.
+        </p>
+      </div>
+    </section>
+
+    <!-- Placeholder Play Section -->
+    <section id="play" class="section">
+      <h2>Play Open Universe Omega</h2>
+      <p>
+        The WebGL build will be embedded here. Once the Unity game is exported, this section will load the
+        playable universe directly in your browser with no installation required.
+      </p>
+      <div class="card">
+        <p><em>Coming soon: In‑browser gameplay powered by Unity WebGL.</em></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sign Up Modal -->
+  <div id="signup-modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="close-signup" class="modal-close">&times;</button>
+      <h2>Create Your OmegaVerse Account</h2>
+      <form id="signup-form">
+        <label>
+          Email
+          <input type="email" id="signup-email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Username
+          <input type="text" id="signup-username" placeholder="Choose a username" required />
+        </label>
+        <label>
+          Password
+          <input type="password" id="signup-password" placeholder="Choose a password" required />
+        </label>
+        <button type="submit" class="btn primary">Sign Up</button>
+        <p id="signup-message" class="message"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
